@@ -1,0 +1,8 @@
+Flask==1.1.1
+Flask-Cors==3.0.8
+requests~=2.23.0
+Werkzeug==0.16.1
+wincertstore==0.2
+psutil==5.7.0
+pyparsing==2.4.6
+Flask-MonitoringDashboard==3.0.6
