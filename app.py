@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 # geting and sending response to dialogflow
-@app.route('/webhook', methods=['POST'])
+@app.route('/webhook', methods=['POST', 'GET'])
 @cross_origin()
 def webhook():
     req = request.get_json(silent=True, force=True)
@@ -28,8 +28,9 @@ def webhook():
 
     # processing the request from dialogflow
 
-
+# @app.route('/processRequest', methods=['GET'])
 def processRequest(req):
+    
     # log = logger.Log()
 
     sessionID = req.get('responseId')
